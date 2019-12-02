@@ -1,7 +1,6 @@
 import tkinter
 from tkinter import messagebox
 import random
-import time
 
 class STARTUPMENU:
     # This class will include the startup menu of the game.
@@ -375,6 +374,7 @@ class STARTGAME:
                 self.characterNameLabel.configure (text = "Q")
                 self.dialogLabel.configure (text = "*Sigh*")
                 self.func ()
+                self.wnd.destroy ()
             else:
                 self.characterNameLabel.configure (text = "Swapnendu Sanyal")
                 self.dialogLabel.configure (text = "Why is this so hard?")
@@ -467,7 +467,6 @@ class STARTGAME:
             self.func ()
 
     def func (self):
-        time.sleep (10)
         return
 
 
